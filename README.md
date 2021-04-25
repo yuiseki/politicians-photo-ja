@@ -5,6 +5,12 @@
 - 日本の政治家の写真集です
 - wikidataおよびwiki commonsのデータが元になっています
 
+
+## データ構造 | Data structure
+- public
+  - politicians
+    - A～Z
+
 ## 使い方 | Usage
 ```
 ./add-photo.sh 菅義偉
