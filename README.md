@@ -43,6 +43,6 @@ cd mecab-ipadic-neologd
 または
 
 ```
-wb query -p P39 -o Q274948 --labels -l ja | jq -r '.[] | .subject.label' > data/歴代内閣総理大臣.txt
+wb query -p P39 -o `wb id 内閣総理大臣 -l ja` --labels -l ja | jq -r '.[] | .subject.label' > data/歴代内閣総理大臣.txt
 cat data/歴代内閣総理大臣.txt | ./add-photo.sh
 ```
