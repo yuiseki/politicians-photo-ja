@@ -16,7 +16,22 @@
 - `public/politicians/A/A/安倍晋三`
 - `public/politicians/S/SU/菅義偉`
 
-## 使い方 | Usage
+
+## 更新方法 | How to update
+
+### セットアップ | Setup
+
+`mecab-ipadic-neologd` が必須です
+
+#### Ubuntu
+```
+sudo apt install mecab libmecab-dev mecab-ipadic-utf8 git make curl xz-utils file
+git clone --depth 1 https://github.com/neologd/mecab-ipadic-neologd
+cd mecab-ipadic-neologd
+./bin/install-mecab-ipadic-neologd -n
+```
+
+### セットアップ完了後
 ```
 ./add-photo.sh 菅義偉
 ```
