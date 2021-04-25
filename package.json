@@ -1,0 +1,19 @@
+{
+  "name": "politician-photos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@moneyforward/stream-util": "^0.1.4",
+    "commander": "^7.2.0",
+    "jaconv": "^1.0.4",
+    "kuromoji": "^0.1.2",
+    "mecab-async": "^0.1.2"
+  }
+}
