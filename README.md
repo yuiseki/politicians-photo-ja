@@ -3,7 +3,7 @@
 ## これは何 | What is this
 
 - 日本の政治家の写真集です
-- wikidataおよびwiki commonsのデータが元になっています
+- wikidataおよびwikimedia commonsのデータが元になっています
 
 
 ## データ構造 | Data structure
