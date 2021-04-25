@@ -16,11 +16,15 @@
 - `public/politicians/A/A/安倍晋三`
 - `public/politicians/S/SU/菅義偉`
 
+## 使い方 | Usage
+政治家の写真が大量にほしいとき、
+```
+git clone --depth 1 https://github.com/yuiseki/politicians-photo-ja
+```
+とやって使えます
 
 ## 更新方法 | How to update
-
 ### セットアップ | Setup
-
 `mecab-ipadic-neologd` が必須です
 
 #### Ubuntu
