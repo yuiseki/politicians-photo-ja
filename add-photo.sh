@@ -28,7 +28,9 @@ _add_photo () {
       echo $photourl
       filename=$(basename $photourl)
       filename=${filename//%20/_}
-      wget -q -O $dirpath/$filename $photourl
+      if [ ! -e $dirpath/$filename ]; then
+        wget -q -O $dirpath/$filename $photourl
+      fi
     done
   done
 }
