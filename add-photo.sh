@@ -1,10 +1,9 @@
 #!/bin/bash
 
-
 _add_photo () {
   for name in $(cat -)
   do
-    echo -n
+    echo ""
     echo $name
     first=$(node add.js $name)
     echo $first
@@ -20,14 +19,17 @@ _add_photo () {
     if [ -z "$id" ]; then
       continue
     fi
-    photourl=$(wb query -s $id -p P18)
-    echo $photourl
-    if [ -z "$photourl" ]; then
+    photourls=$(wb query -s $id -p P18)
+    if [ -z "$photourls" ]; then
       continue
     fi
-    filename=$(basename $photourl)
-    filename=${filename//%20/_}
-    wget -q -O $dirpath/$filename $photourl
+    for photourl in $photourls
+    do
+      echo $photourl
+      filename=$(basename $photourl)
+      filename=${filename//%20/_}
+      wget -q -O $dirpath/$filename $photourl
+    done
   done
 }
 
